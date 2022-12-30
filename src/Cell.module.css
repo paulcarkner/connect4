@@ -1,0 +1,12 @@
+.cell {
+    width: 100px;
+    height: 100px;
+}
+
+.cell.red {
+    background: red;
+}
+
+.cell.black {
+    background: black;
+}
