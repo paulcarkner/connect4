@@ -1,0 +1,23 @@
+html {
+  height: 100vh;
+}
+
+body {
+  background-image: radial-gradient(
+      closest-side at 50% 90%,
+      #000b,
+      #0009 30%,
+      #0000
+    ),
+    linear-gradient(
+      0deg,
+      #ccc8,
+      #8888 20%,
+      #4448 20%,
+      #2228 calc(20% + 1px),
+      #ccc8 calc(20% + 2px),
+      #ccc8
+    ),
+    radial-gradient(ellipse at 50% 80%, #fff, #000);
+  overflow: hidden;
+}

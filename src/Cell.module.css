@@ -1,12 +1,32 @@
 .cell {
-    width: 100px;
-    height: 100px;
+  aspect-ratio: 1;
+  background: radial-gradient(closest-side, transparent 90%, #a7a71b 90%, #a7a71b 95%, #d5d522 95%);
+  position: relative;
+  flex: 1;
 }
 
-.cell.red {
+.cell::after {
+    position: absolute;
+    inset: 5%;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 0.3em #0004;
+}
+
+.cell.red::after {
+    content: '';
     background: red;
 }
 
-.cell.black {
-    background: black;
+.cell.black::after {
+    content: '';
+  background: #444;
+}
+
+.cell::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transform: translate(var(--xShift), var(--yShift));
+    background: radial-gradient(closest-side, transparent 85%, hsl(60, 72%, 28%) 85%);
 }

@@ -1,4 +1,42 @@
-.board {
-    display: flex;
+.boardContainer {
+  flex: 1 0 100%;
+  aspect-ratio: 7 / 6;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+}
 
+.board {
+  aspect-ratio: 7 / 6;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: 1em solid #d5d522;
+  outline: 0.3em solid #aa0;
+  position: relative;
+}
+
+.board::before {
+    position: absolute;
+    content: '';
+    background: linear-gradient(315deg, transparent 50%, #656510 50%);
+    right: calc(60% + 1.25em);
+    width: 40%;
+    top: calc(70% + 2em);
+    transform: scaleX(20%) rotate(33deg);
+    z-index: -2;
+    transform-origin: top left;
+    aspect-ratio: 1;
+}
+
+.board::after {
+    position: absolute;
+    content: '';
+    background: linear-gradient(45deg, transparent 50%, #bdbd1f 50%);
+    left: calc(60% + 1.25em);
+    width: 40%;
+    top: calc(70% + 2em);
+    transform: scaleX(20%) rotate(-33deg);
+    z-index: -2;
+    transform-origin: top right;
+    aspect-ratio: 1;
 }

@@ -1,4 +1,20 @@
 .column {
+    display: flex;
+    flex-direction: column;
     border: none;
     background: none;
+    position: relative;
+    padding: 0;
+}
+
+.column:hover::after {
+    content: '';
+    width: 95%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--player-color);
+    position: absolute;
+    bottom: calc(100% + 2em);
+    left: 2.5%;
+    box-shadow: inset 0 0 0 0.3em #0004, 0 0.3em 0 0 #0004, 0 0.3em 0 0 var(--player-color);
 }
