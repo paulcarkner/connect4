@@ -27,6 +27,6 @@
     position: absolute;
     inset: 0;
     z-index: -1;
-    transform: translate(var(--xShift), var(--yShift));
+    transform: translate(var(--xShift), var(--yShift)); /* set in element style */
     background: radial-gradient(closest-side, transparent 85%, hsl(60, 72%, 28%) 85%);
 }

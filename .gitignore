@@ -9,7 +9,7 @@
 /coverage
 
 # production
-# /build
+# /build removed for using build in Netlify as sub-module of portfolio
 /dist
 
 # misc

@@ -1,11 +1,11 @@
-.App {
+.app {
   position: absolute;
   inset: 10%;
   display: flex;
   align-items: end;
 }
 
-.Dialog {
+.dialog {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -18,11 +18,11 @@
   box-shadow: 0 1em 1em 1em #0004;
 }
 
-.Dialog::backdrop {
+.dialog::backdrop {
   background: #0004;
 }
 
-.Dialog button {
+.dialog button {
   font-size: 0.8em;
   padding: 0.3em 0.8em;
   margin-top: 0.75em;
@@ -35,6 +35,6 @@
   cursor: pointer;
 }
 
-.Dialog button:hover {
-    box-shadow: inset 0 0.1em 0.3em 0 #0002;
+.dialog button:hover {
+  box-shadow: inset 0 0.1em 0.3em 0 #0002;
 }
