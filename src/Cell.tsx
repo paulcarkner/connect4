@@ -6,7 +6,7 @@ export default class Cell extends React.Component<{
   cellIndex: number;
   cellValue: number; //token colour or null
 }> {
-  render() {
+  render(): JSX.Element {
     return (
       <div
         className={`${Style.cell} ${

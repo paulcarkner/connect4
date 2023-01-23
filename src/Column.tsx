@@ -7,7 +7,7 @@ export default class Column extends React.Component<{
   columnLayout: Array<number>;
   clickHandler: React.MouseEventHandler; //column click handler (in App.tsx)
 }> {
-  render() {
+  render(): JSX.Element {
     return (
       <button
         className={Style.column}

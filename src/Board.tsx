@@ -7,7 +7,7 @@ export default class Board extends React.Component<{
   clickHandler: React.MouseEventHandler; //column click handler
   playerColor: string; //current player colour (css string)
 }> {
-  render() {
+  render(): JSX.Element {
     return (
       <div className={Style.boardContainer}>
         <div
